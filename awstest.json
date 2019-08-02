@@ -3,14 +3,14 @@
   "containerDefinitions": [
     {
       "name": "client",
-      "image": "dsh2046/multi-client",
+      "image": "nginx",
       "hostname": "client",
-      "essential": false,
+      "essential": true,
       "memory": 128,
       "portMappings": [
         {
           "hostPort": 80,
-          "containerPort": 3000
+          "containerPort": 80
         }
       ]
     }
